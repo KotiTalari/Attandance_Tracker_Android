@@ -1,0 +1,240 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "QRCode",
+  "dateExported": "2022-11-10T10:36:52.872Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "c5c57b91-401e-4cea-bdf4-3e43ddf01da8",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "UserRegister",
+      "url": "http://localhost:8080/user/add",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2022-10-17T08:58:23.117Z",
+      "modified": "2022-11-10T07:45:49.002Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\" : \"koti\",\n  \"id\" : \"4351\",\n  \"type\" : \"f\",\n  \"dob\" : \"2022-10-19\",\n  \"active\" : true,\n  \"password\" : \"abcd\",\n  \"gender\" : \"m\",\n  \"mobileNo\" : \"9876543213\",\n  \"email\" : \"test@12345\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "e951c134-e045-4723-9689-34ba37fe5cfc",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "UpdateUser",
+      "url": "http://localhost:8080/user/update",
+      "method": "POST",
+      "sortNum": 12500,
+      "created": "2022-11-10T07:39:37.452Z",
+      "modified": "2022-11-10T07:45:09.668Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\" : \"kotiee\",\n  \"id\" : \"4351\",\n  \"type\" : \"f\",\n  \"dob\" : \"2022-10-19\",\n  \"active\" : true,\n  \"password\" : \"abcd\",\n  \"gender\" : \"m\",\n  \"mobileNo\" : \"9876543213\",\n  \"email\" : \"test@12345\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "fea0a629-6735-493c-b9e3-8cbda0d84748",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "AddCourseToUser",
+      "url": "http://localhost:8080/user/addCourse",
+      "method": "POST",
+      "sortNum": 15000,
+      "created": "2022-11-01T05:41:53.631Z",
+      "modified": "2022-11-10T07:46:08.514Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\" : \"\",\n  \"userId\":\"4351\",\n  \"courseId\" :\"c12\"\n  \n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "0697e193-fce6-480f-86e3-45f430fde97b",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "ViewUser",
+      "url": "http://localhost:8080/user/view?id=4351",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-10-17T13:58:02.694Z",
+      "modified": "2022-11-10T08:45:44.020Z",
+      "headers": [
+        {
+          "name": "token",
+          "value": "e8f2178d-0428-46b4-ad2b-a6c7228aebd0"
+        }
+      ],
+      "params": [
+        {
+          "name": "id",
+          "value": "4351",
+          "isPath": false
+        }
+      ],
+      "tests": []
+    },
+    {
+      "_id": "f63f4d29-b516-45af-8469-31095bf4c99b",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "GenerateQRcode",
+      "url": "http://localhost:8080/qr/generate",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2022-10-17T11:00:38.787Z",
+      "modified": "2022-11-10T10:17:54.900Z",
+      "headers": [
+        {
+          "name": "token",
+          "value": "dc3cd465-eefc-4b46-b091-c4904955f82d"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"courseId\":\"123\",\n  \"otherData\" : \"test5_session\",\n  \"active\" : true,\n  \"createdOn\" : \"2022-10-19\",\n  \"courseName\":\"javatesting\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "646a61fe-ecd8-428a-871f-9ea1e53bc2d1",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "AddCousre",
+      "url": "http://localhost:8080/course/add",
+      "method": "POST",
+      "sortNum": 40000,
+      "created": "2022-10-19T16:39:04.513Z",
+      "modified": "2022-11-03T16:53:52.508Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\" :\"\",\n  \"name\" : \"testCourse\",\n  \"desc\" : \"another test word2\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "72d01093-2e26-4437-96ae-ba6cb573bb16",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "ViewCourseById",
+      "url": "http://localhost:8080/course/view?cid=3",
+      "method": "GET",
+      "sortNum": 45000,
+      "created": "2022-11-01T06:14:07.699Z",
+      "modified": "2022-11-03T17:21:49.348Z",
+      "headers": [],
+      "params": [
+        {
+          "name": "cid",
+          "value": "3",
+          "isPath": false
+        }
+      ],
+      "tests": []
+    },
+    {
+      "_id": "5cab7e07-834a-4bbf-ae1e-addaf57f37b5",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "ViewAllCourses",
+      "url": "http://localhost:8080/course/viewAll",
+      "method": "GET",
+      "sortNum": 47500,
+      "created": "2022-11-01T06:14:45.006Z",
+      "modified": "2022-11-01T06:15:18.122Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "95d99eb5-2218-46ef-93ea-df499ba08b9d",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "RegisterAttendance",
+      "url": "http://localhost:8080/attend/register",
+      "method": "POST",
+      "sortNum": 50000,
+      "created": "2022-10-19T18:22:18.901Z",
+      "modified": "2022-11-01T05:57:58.257Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id \" : \"\",\n\t\"uid\" : \"userId\",\n\t\"qid\" : \"qrId\",\n\t\"scanTime\": \"2022-10-19\",\n\t\"cid\" : \"course\",\n\t\"createdOn\" : \"2022-10-19\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "7d4ac4e7-aa73-471e-abe4-33bda6561e97",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "ViewAllAttendance",
+      "url": "http://localhost:8080/attend/viewAll",
+      "method": "GET",
+      "sortNum": 60000,
+      "created": "2022-10-19T19:42:18.903Z",
+      "modified": "2022-10-19T19:42:55.315Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "292034b9-a2f2-4083-9dc4-0d3fb3bf895e",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "UsrLogin",
+      "url": "http://localhost:8080/user/logout",
+      "method": "POST",
+      "sortNum": 70000,
+      "created": "2022-11-10T08:05:23.060Z",
+      "modified": "2022-11-10T10:27:06.124Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"uid\" : \"fdb79ce5-904f-473a-b35f-b3d61382ee70\"\n  \n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "ad33cdeb-1f0a-42c6-a8d4-25bea0b04302",
+      "colId": "fa3426a8-05ce-421a-8c72-a32f9cfcc7d5",
+      "containerId": "",
+      "name": "UserLogout",
+      "url": "http://localhost:8080/user/login",
+      "method": "POST",
+      "sortNum": 80000,
+      "created": "2022-11-10T10:26:30.194Z",
+      "modified": "2022-11-10T10:26:30.194Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\" : \"4351\",\n  \"password\" :\"abcd\"\n}",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+
+}
